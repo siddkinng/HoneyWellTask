@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConsoleApp7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<int> list1 = new List<int> { 9, 11, 15, 36, 27, 54 };
+            List<int> list2 = new List<int> { 6, 17, 29, 9, 35, 27 };
+
+
+            var commonElements = list1.Intersect(list2);
+
+            foreach (var c in commonElements)
+            {
+                Console.WriteLine(c);
+            }
+            Console.ReadLine();
+        }
+
+    }
+
+}
